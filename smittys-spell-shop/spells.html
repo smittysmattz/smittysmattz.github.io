@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smitty's Spellshop &mdash; Spells</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Great+Vibes&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script defer src="script.js"></script>
+  <script defer src="spells.js"></script>
+</head>
+<body>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="spells.html">Spells</a>
+    <a href="about.html">About</a>
+    <div id="hamburger-menu"><img src="https://i.imgur.com/qTQBoDO.png"></div>
+    <div id="mobile-nav">
+      <span class="exit">X</span>
+      <a href="index.html">Home</a>
+      <a href="spells.html">Spells</a>
+      <a href="about.html">About</a>
+    </div>
+  </nav>
+  <div id="spell-box">
+    <div id="spell-schools">
+      <h3>Spells for Sale:</h3>
+      <select id="school-selector">
+        <option value="" disabled selected>Filter by School of Magic</option>
+        <option value="abjuration">abjuration</option>
+        <option value="conjuration">conjuration</option>
+        <option value="divination">divination</option>
+        <option value="enchantment">enchantment</option>
+        <option value="evocation">evocation</option>
+        <option value="illusion">illusion</option>
+        <option value="necromancy">necromancy</option>
+        <option value="transmutation">transmutation</option>
+      </select>
+    </div>
+    <hr />
+    <div id="spell-list"></div>
+  </div>
+</body>
+</html>

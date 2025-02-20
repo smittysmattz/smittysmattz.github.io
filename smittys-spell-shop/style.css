@@ -1,0 +1,311 @@
+:root {
+    --dark-purple: #2A001F;
+    --light-purple: #D8B4FF;
+    --mid-purple-1: #6A3E9C;
+    --mid-purple-2: #9B59B6;
+    --antiquewhite: #FAEBD7;
+  
+    --font-logo: 'Great Vibes', cursive;
+    --font-headline: 'Cinzel', serif;
+    --font-body: 'Merriweather', serif;
+  }
+  
+  body {
+    margin: 0;
+    font-family: var(--font-body);
+    color: var(--dark-purple);
+  }
+  
+  nav {
+    background-color: var(--dark-purple);
+    height: 100px;
+    line-height: 100px;
+    padding: 0 10%;
+    text-align: right;
+  }
+  
+  #hamburger-menu {
+    height: 50px;
+    width: 50px;
+    display: none;
+    text-align: center;
+    line-height: 50px;
+    margin-left: auto;
+  }
+  
+  #hamburger-menu img {
+    width: 100%;
+  }
+  
+  #hamburger-menu:hover {
+    cursor: pointer;
+  }
+  
+  #mobile-nav {
+    background-color: var(--light-purple);
+    text-align: center;
+    position: fixed;
+    top: 20px;
+    left: 5%;
+    z-index: 1;
+    width: 90%;
+    display: none;
+  }
+  
+  #mobile-nav a {
+    display: block;
+    color: var(--dark-purple);
+    border: 1px solid var(--dark-purple);
+    margin: 0;
+  }
+  
+  #mobile-nav .exit {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    line-height: 25px;
+    color: white;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 100%;
+    background-color: var(--mid-purple-2);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: var(--light-purple);
+    margin-left: 20px;
+  }
+  
+  nav a:hover {
+    color: var(--antiquewhite)
+  }
+  
+  #logo-box {
+    height: 400px;
+    background-image: url("https://preview.redd.it/a-witchy-desktop-wallpaper-drawn-by-me-feel-free-to-use-v0-apdv21no8hgc1.jpeg?auto=webp&s=f5cb19ff459bb6cdd4b946e28de770c398d6d392");
+    padding: 0 10%;
+    color: var(--light-purple)
+  }
+  
+  #logo-box h1 {
+    font-family: var(--font-logo);
+    font-size: 96px;
+    margin: 0;
+    padding-top: 125px;
+  }
+  
+  #logo-box h2 {
+    padding-left: 5%;
+    margin-top: 0;
+  }
+  
+  #ad-box {
+    height: 200px;
+    text-align: center;
+    background-color: var(--mid-purple-2);
+    padding: 50px 10%;
+  }
+  
+  #ad-box h3 {
+    font-family: var(--font-headline);
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  #ad-box button {
+    padding: 10px 50px;
+    border: 5px solid var(--mid-purple-1);
+    border-radius: 15px;
+    background-color: var(--antiquewhite);
+    font-weight: bold;
+  }
+  
+  #ad-box button:hover {
+    cursor: pointer;
+    background-color: white;
+  }
+  
+  #new-arrivals-box {
+    background-color: var(--antiquewhite);
+    padding: 50px 10%;
+  }
+  
+  #new-arrivals-box h3 {
+    font-family: var(--font-headline);
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  #new-arrivals {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .new-arrival {
+    width: 24%;
+  }
+  
+  .new-arrival img {
+    width: 100%;
+  }
+  
+  #testimonials-box {
+    background-color: var(--mid-purple-1);
+    padding: 50px 10%;
+  }
+  
+  #testimonials-box h3 {
+    font-family: var(--font-headline);
+    color: var(--light-purple);
+    font-size: 48px;
+    margin: 0;
+  }
+  
+  #testimonials {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .testimonial {
+    width: 28%;
+    text-align: center;
+    background-color: var(--light-purple);
+    padding: 20px;
+  }
+  
+  .testimonial img {
+    border: 5px solid var(--mid-purple-2);
+    border-radius: 40%;
+  }
+  
+  .testimonial p {
+    margin: 0;
+    padding: 10px;
+  }
+  
+  footer {
+    background-color: var(--dark-purple);
+    color: var(--light-purple);
+    padding: 50px 10%;
+  }
+  
+  footer p {
+    margin: 0;
+  }
+  
+  /* SPELLS */
+  
+  #spell-box {
+    background-color: var(--antiquewhite);
+    text-align: center;
+    padding: 50px 10%;
+    min-height: 100vh;
+  }
+  
+  #spell-box h3 {
+    margin: 0;  
+    font-family: var(--font-headline);
+    color: var(--dark-purple);
+    font-size: 48px;
+  }
+  
+  #school-selector {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  
+  #spell-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .spell {
+    background-color: white;
+    width: 20%;
+    padding: 10px;
+    margin: 10px;
+  }
+  
+  /* About page */
+  #about-box {
+    min-height: 100vh;
+    background-color: var(--antiquewhite);
+    padding: 50px 10%;
+  }
+  
+  #about-box h3 {
+    margin: 0;  
+    font-family: var(--font-headline);
+    color: var(--dark-purple);
+    font-size: 48px;
+  }
+  
+  /* MEDIA QUERIES */
+  
+  @media (min-width: 1000px) and (max-width: 600px){
+    /* TO DO: ADD STYLES */
+  }
+  
+  @media (max-width: 599px){
+    nav, 
+    #logo-box, 
+    #ad-box, 
+    #new-arrivals-box, 
+    #testimonials-box,
+    footer {
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+    }
+  
+    #logo-box h1 {
+      font-size: 75px;
+      padding-top: 75px;
+    }
+  
+    #logo-box h2 {
+      font-size: 18px;
+    }
+  
+    #new-arrivals {
+      flex-wrap: wrap;
+    }
+  
+    .new-arrival {
+      width: 48%;
+    }
+  
+    #testimonials {
+      flex-wrap: wrap;
+    }
+  
+    .testimonial {
+      width: 90%;
+      margin-bottom: 30px;
+    }
+  
+    nav a {
+      display: none;
+    }
+  
+    #hamburger-menu {
+      display: block;
+    }
+  
+    .spell {
+      width: 40%;
+      margin: 10px 0;
+    }
+  
+  }

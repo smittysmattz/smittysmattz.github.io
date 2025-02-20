@@ -179,6 +179,7 @@
   .testimonial img {
     border: 5px solid var(--mid-purple-2);
     border-radius: 40%;
+    width: 100%;
   }
   
   .testimonial p {
